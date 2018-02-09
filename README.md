@@ -1,7 +1,8 @@
 PAT 甲级试题练习
 
 source:
-https://www.patest.cn/contests/pat-a-practise
+https://www.patest.cn/contests/pat-a-
+
 https://www.nowcoder.net/pat/5/problems
 
 what is pat:
