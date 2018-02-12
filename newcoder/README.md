@@ -1,8 +1,0 @@
-```
-09.cpp: Heap Sort
-
-10.cpp:
-    Binary Search Tree
-        - In-Order Traversal
-        - BFS by queue 
-```
