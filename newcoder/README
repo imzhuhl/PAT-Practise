@@ -9,3 +9,6 @@
     Graph
         - BFS by queue
         - queue, vector (c++)
+
+12.cpp:
+    char array in/out 
