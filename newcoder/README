@@ -12,3 +12,9 @@
 
 12.cpp:
     char array in/out 
+
+13.cpp:
+    find prime number
+    hash table:
+        - Quadratic probing
+        
