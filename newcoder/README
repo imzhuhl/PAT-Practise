@@ -17,6 +17,9 @@
     find prime number
     hash table:
         - Quadratic probing
-        
+
+17-1.cpp:
+    multiset, how to maintain median digit, O(logn)
+
 20.cpp:
     I feel difficult, use <sstream>
