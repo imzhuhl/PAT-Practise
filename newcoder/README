@@ -26,3 +26,8 @@
 
 22.cpp:
     Binary Search Tree and Complete Binary Tree
+
+24.cpp:
+    AVL Tree:
+        how to maintain the balance
+        RR LL RL LR, height calculating
