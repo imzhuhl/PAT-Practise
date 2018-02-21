@@ -14,7 +14,7 @@ int main() {
         c = getchar();
         bool have = false;
         s = "";
-        if ((c >= '0' && c <= '9') ||(c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+        if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
             while ((c >= '0' && c <= '9') ||(c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
                 if (c >= 'A' && c <= 'Z') {
                     c = c + 32;
@@ -47,7 +47,9 @@ int main() {
             max = count[idx];
         }
     }
-    printf("%s %d\n", str[idx].c_str(), max);
+    if (max != -1 && idx != -1) {
+        printf("%s %d\n", str[idx].c_str(), max);
+    }
 
     return 0;
 }
