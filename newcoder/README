@@ -34,3 +34,6 @@
 
 26.cpp:
     backtracking
+
+33.cpp:
+    sliding window
