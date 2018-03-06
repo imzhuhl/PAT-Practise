@@ -52,3 +52,6 @@
 
 47.cpp:
     one point not AC
+
+50.cpp:
+    time limit, so use hash but not map
