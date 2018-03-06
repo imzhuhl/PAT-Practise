@@ -18,6 +18,9 @@
     hash table:
         - Quadratic probing
 
+17.cpp:
+    divide and conquer
+
 17-1.cpp:
     multiset, how to maintain median digit, O(logn)
 
