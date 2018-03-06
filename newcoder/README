@@ -55,3 +55,6 @@
 
 50.cpp:
     time limit, so use hash but not map
+
+54.cpp:
+    use sscanf and sprintf to quick convert int and char array
