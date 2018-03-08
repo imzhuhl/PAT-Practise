@@ -10,6 +10,7 @@ vector<int> father;
 
 int Find(int a) {
     while (a != father[a]) {
+        father[a] = father[father[a]];
         a = father[a];
     }
     return a;
