@@ -17,4 +17,6 @@ greedy algorithm:
     1033 1037 1067 1070
 
 Tree:
-    Tree Traversal: BFS 1004
+    Tree Traversal: 
+        1004: BFS
+        1020: inorder,postorder ==> level order
