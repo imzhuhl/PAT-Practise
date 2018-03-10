@@ -20,3 +20,4 @@ Tree:
     Tree Traversal: 
         1004: BFS
         1020: inorder,postorder ==> level order
+        1053: DFS
