@@ -16,9 +16,11 @@ Shortest path problem:
 greedy algorithm:
     1033 1037 1067 1070
 
-Tree:
-    Tree Traversal: 
-        1004: BFS
-        1020: inorder,postorder ==> level order
-        1053: DFS
-        1115: build binary tree
+Tree: 
+    1004: BFS
+    1020: inorder,postorder ==> level order
+    1053: DFS
+    1115: build binary tree
+
+graph:
+    1013: 图的遍历，统计强连通分量的个数
