@@ -4,16 +4,16 @@
 1020:
     how to build binary tree from postorder and inorder
 
-hash:
+Hash:
     1078 1048 1050 1092 1084
 
-disjoint-set data structure:
+Disjoint-set data structure:
     1107 1114 1118
 
 Shortest path problem:
     1003 1018
 
-greedy algorithm:
+Greedy algorithm:
     1033 1037 1067 1070
 
 Tree: 
@@ -22,7 +22,9 @@ Tree:
     1053: DFS
     1115: build binary tree
 
-graph:
+Graph:
     1013: 图的遍历，统计强连通分量的个数
     1021: one point not AC
-    
+
+Dynamic programming:
+    1007
