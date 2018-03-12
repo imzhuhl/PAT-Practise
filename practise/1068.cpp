@@ -15,8 +15,11 @@ int main() {
     sort(coin + 1, coin + n + 1, greater<int>());
     
     for (int i = 1; i <= n; i++) {
-        for (int j = coin[i]; j <= m; j++) {
-            if (dp[i - 1][j] <= dp[i - 1][j - coin[i]] + coin[i]) {
+        for (int j = 1; j <= m; j++) {
+            if (j < coin[i]) {
+                dp[i][j] = dp[i-1][j];
+            }
+            else if (dp[i - 1][j] <= dp[i - 1][j - coin[i]] + coin[i]) {
                 dp[i][j] = dp[i - 1][j - coin[i]] + coin[i];
                 check[i][j] = coin[i];
             } else {
