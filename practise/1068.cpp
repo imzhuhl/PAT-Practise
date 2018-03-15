@@ -18,29 +18,25 @@ int main() {
         for (int j = 1; j <= m; j++) {
             if (j < coin[i]) {
                 dp[i][j] = dp[i-1][j];
-            }
-            else if (dp[i - 1][j] <= dp[i - 1][j - coin[i]] + coin[i]) {
+            } else if (dp[i - 1][j] <= dp[i - 1][j - coin[i]] + coin[i]) {
                 dp[i][j] = dp[i - 1][j - coin[i]] + coin[i];
                 check[i][j] = coin[i];
             } else {
                 dp[i][j] = dp[i - 1][j];
-                check[i][j] = check[i - 1][j];
             }
         }
         
     }
 
-    if (dp[n][m] == m) {
-        int sum = 0;
-        int p = m;
-        int r = n;
-        while (sum < m) {
-            int x = check[r][p];
-            printf("%d", x);
-            p = p - x;
-            sum += x;
-            r--;
-            if (sum < m) printf(" ");
+    if (m != 0 && dp[n][m] == m) {
+        int j = m, i = n;
+        while (j > 0) {
+            if (check[i][j] != 0) {
+                if (j != m) printf(" ");
+                printf("%d", check[i][j]);
+                j = j - check[i][j];
+            }
+            i--;
         }
         printf("\n");
     } else {
