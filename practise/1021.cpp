@@ -2,6 +2,7 @@
 #include <vector>
 #include <set>
 #include <algorithm>
+#include <map>
 using namespace std;
 
 int N;
@@ -19,19 +20,19 @@ void right(int id) {
     }
 }
 
-void dfs(int rootid, int id, int deep) {
+void dfs(int id, int deep) {
     visit[id] = 1;
     for (int i = 1; i <= N; i++) {
         if (road[id][i] == 1 && visit[i] == 0) {
-            dfs(rootid, i, deep + 1);
+            dfs(i, deep + 1);
         }
     }
     if (deep > maxdeep) {
         maxdeep = deep;
         depst.clear();
-        depst.insert(rootid);
+        depst.insert(id);
     } else if (deep == maxdeep) {
-        depst.insert(rootid);
+        depst.insert(id);
     }
 }
 
@@ -54,12 +55,13 @@ int main() {
     if (cnt != 1) {
         printf("Error: %d components\n", cnt);
     } else {
-        for (int i = 1; i <= N; i++) {
-            flag = 0;
-            fill(visit, visit + 10001, 0);
-            dfs(i, i, 0);
-        }
-        set<int>::iterator it;
+        fill(visit, visit + 10001, 0);
+        dfs(1, 0);
+        set<int> tmp = depst;
+        set<int>::iterator it = tmp.begin();
+        fill(visit, visit + 10001, 0);
+        dfs(*it, 0);
+        depst.insert(tmp.begin(), tmp.end());
         for (it = depst.begin(); it != depst.end(); it++) {
             printf("%d\n", *it);
         }

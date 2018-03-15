@@ -28,7 +28,7 @@ Tree:
 
 Graph:
     1013: 图的遍历，统计强连通分量的个数
-    1021: one point not AC
+    1021: 两次dfs就可以找到所有目标节点，否则全部节点遍历超时
 
 Dynamic programming:
     1007
