@@ -25,6 +25,7 @@ Tree:
     1115: build binary tree
     1135: Red-Black Tree, one point not AC
     1119: difficult, preorder, postorder ==> judge inorder is unique
+    1099: Binary Search Tree
 
 Graph:
     1013: 图的遍历，统计强连通分量的个数
