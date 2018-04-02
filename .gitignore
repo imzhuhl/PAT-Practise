@@ -1,8 +1,8 @@
 *
-!*.*
+!*.cpp
+!*.c
+!*.java
 !*/
 !README
 !*/README
-!*.java
-.DS_Store
-out/
+
