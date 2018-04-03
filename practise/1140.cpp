@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 using namespace std;
 
 int main() {
@@ -6,6 +7,7 @@ int main() {
     scanf("%d%d", &d, &n);
 
     string a, b;
+    stringstream out;
     a = d + '0';
     for (int i = 1; i < n; i++) {
         char x = a[0];
@@ -15,13 +17,17 @@ int main() {
                 cnt++;
             } else {
                 b += x;
-                b += to_string(cnt);
+                out.str("");
+                out << cnt;
+                b += out.str();
                 cnt = 1;
                 x = a[j];
             }
         }
         b += x;
-        b += to_string(cnt);
+        out.str("");
+        out << cnt;
+        b += out.str();
         a.clear();
         a = b;
         b.clear();
